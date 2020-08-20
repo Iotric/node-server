@@ -5,7 +5,7 @@
  */
 
 require('module-alias/register');
-require('dotenv').config();
+require('@env/index');
 require('../lib/logger/logger');
 
 const express     = require('express');

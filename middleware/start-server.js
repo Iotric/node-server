@@ -4,10 +4,9 @@
  * Module dependencies.
  */
 
-const mongoose    = require('@lib/mongoose').connect();
+const mongoose    = require('../lib/mongoose').connect();
 const http        = require('http');
-const port        = process.env.PORT || 5000;
-
+const port        = process.env.PORT || 9000;
 
 module.exports = app => {
     mongoose.connection.on('connected', listen);

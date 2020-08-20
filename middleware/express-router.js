@@ -6,7 +6,6 @@
 
 const express   = require('express');
 const router    = express.Router();
-const env       = process.env.NODE_ENV || 'development';
 const statusMonitor = require('express-status-monitor')();
 
 /**
